@@ -1,19 +1,24 @@
 * {
+    border: 0px solid red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    height: 65vh;
+    width: 65vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
     border: 1px solid red;
 }
 
-.sketchpad {
-    display: flex;
-    height: 50vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.pix {
-    width: 30%;
+#blocks {
     margin-top: 0px;
     margin-bottom: 0px;
-    flex-grow: 1;
-    border: 5px solid black;
+    outline: 0px solid red;
 }
