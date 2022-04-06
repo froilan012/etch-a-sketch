@@ -8,6 +8,7 @@ for (var i=0; i<value*value; i++){
     const blocks = document.createElement('div');
     blocks.setAttribute('id', 'blocks');
     blocks.setAttribute('class', "box "+ i);
+    blocks.setAttribute('draggable', 'false');
     blocks.style.width = size;
     container.appendChild(blocks);
 
