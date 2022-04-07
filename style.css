@@ -27,7 +27,7 @@ body {
 
 .buttons {
     display: flex;
-    border: 1px solid red;
+    border: 0px solid red;
     width: 65vh;
     justify-content: space-evenly;
 }
@@ -45,4 +45,8 @@ button {
 	-webkit-user-drag: none;
 	-webkit-app-region: no-drag;
 	cursor: default;
+}
+
+input {
+    width: 500px;
 }
