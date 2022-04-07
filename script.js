@@ -1,19 +1,19 @@
 const container = document.querySelector('.container');
 const output = document.querySelector('output');
 const slideValue = document.getElementById("slider");
+var myArr = [];
+var myColor = [2];
 
 function grids(grid) {
     var sizeRef = 100/grid;
     var size = JSON.stringify(sizeRef)+"%";
     for (var i=0; i<grid*grid; i++){
         const blocks = document.createElement('div');
-        blocks.setAttribute('id', 'blocks');
-        blocks.setAttribute('class', "box "+ i);
+        blocks.setAttribute('id', 'box' + (i+1));
+        blocks.setAttribute('class', 'blocks');
         blocks.style.width = size;
         container.appendChild(blocks);
         blocks.style.backgroundColor = 'white';
-        var myArr = [];
-        var myColor = [2];
 
         blocks.addEventListener('mousedown', () => {
             myArr.pop();
@@ -46,10 +46,6 @@ function grids(grid) {
         reset.addEventListener('mousedown', () => {
             blocks.style.backgroundColor = 'white';
         });
-
-        blk.style.backgroundColor = 'yellow';
-        rgb.style.backgroundColor = 'rgb(0, 140, 255)';
-        wht.style.backgroundColor = 'rgb(0, 140, 255)';
 
         rgb.addEventListener('click', () => {
             blk.style.backgroundColor = 'rgb(0, 140, 255)';
@@ -102,8 +98,8 @@ function grids(grid) {
 }
 
 window.addEventListener('load', () => {
-    grids(20);
-    output.innerHTML = "20 X 20";
+    grids(25);
+    output.innerHTML = "25 X 25";
 });
 
 slideValue.addEventListener("change", () => {

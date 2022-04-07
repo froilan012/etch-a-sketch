@@ -5,7 +5,7 @@
 body {
     display: flex;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -21,17 +21,25 @@ body {
     font-family: sans-serif;
 }
 
+.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .container {
     display: flex;
     height: 65vh;
-    width: 65vh;
+    min-width: 65vh;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0px;
     border: 0px solid red;
+    margin: 100px;
 }
 
-#blocks {
+.blocks {
     margin-top: 0px;
     margin-bottom: 0px;
     outline: 1px solid rgba(0, 0, 0, 0.342);
@@ -39,9 +47,10 @@ body {
 
 .buttons {
     display: flex;
-    border: 0px solid red;
-    width: 65vh;
+    flex-direction: column;
     justify-content: space-evenly;
+    height: 50vh;
+    width: 25%;
 }
 
 button {
@@ -50,6 +59,24 @@ button {
     border-radius: 50px;
     height: 50px;
     width: 150px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+output {
+    font-size: large;
+    font-weight: 900;
+    font-family: sans-serif;
+    background-color: aqua;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 70px;
+    text-align: center;
 }
 
 #blk {
@@ -64,5 +91,7 @@ button {
 }
 
 input {
-    width: 500px;
+    width: 20px;
+    height: 500px;
+    -webkit-appearance: slider-vertical
 }

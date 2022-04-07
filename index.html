@@ -10,16 +10,20 @@
 </head>
 <body>
     <div class="header"><h1>ETCH-A-SKETCH</h1></div>
-    <div class="container">
+    <div class="center">
+        <div class="buttons">
+            <button id="clear-board">Clear board</button>
+            <button id="rgb" style="background-color: 'rgb(0, 140, 255)';">RGB</button>
+            <button id="blk" style="background-color: yellow;">Black</button>
+            <button id="wht" style="background-color: 'rgb(0, 140, 255)';">Eraser</button>
+        </div>
+        <div class="container">
 
-    </div>
-    <input type="range" id="slider" min="1" max="40" value="20"></input>
-    <output></output>
-    <div class="buttons">
-        <button id="clear-board">Clear board</button>
-        <button id="rgb">RGB</button>
-        <button id="blk">Black</button>
-        <button id="wht">Eraser</button>
+        </div>
+        <div class="right">
+            <input type="range" id="slider" min="1" max="50" value="25" orient="vertical"></input>
+            <output></output>
+        </div>
     </div>
     <div class="footer">Created by Froilan</div>
     <script src="script.js"></script>
