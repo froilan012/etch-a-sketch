@@ -35,8 +35,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0px;
-    border: 0px solid red;
-    margin: 100px;
+    border: 10px solid rgb(67, 67, 122);
+    margin: 50px;
+    border-radius: 20px;
 }
 
 .blocks {

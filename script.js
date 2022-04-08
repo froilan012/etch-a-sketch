@@ -45,6 +45,13 @@ function grids(grid) {
         const reset = document.getElementById('clear-board');
         reset.addEventListener('mousedown', () => {
             blocks.style.backgroundColor = 'white';
+            reset.style.backgroundColor = 'yellow';
+        });
+        reset.addEventListener('mouseup', () => {
+            reset.style.backgroundColor = 'rgb(0, 140, 255)';
+        });
+        reset.addEventListener('mouseleave', () => {
+            reset.style.backgroundColor = 'rgb(0, 140, 255)';
         });
 
         rgb.addEventListener('click', () => {
@@ -93,6 +100,9 @@ function grids(grid) {
             if (myArr[0] == 1) {
                 blocks.style.backgroundColor = pen();
             }
+        });
+        container.addEventListener('mouseleave', () => {
+            myArr.pop();
         });
     }
 }
