@@ -107,17 +107,18 @@ function grids(grid) {
     }
 }
 
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
 window.addEventListener('load', () => {
     grids(25);
     output.innerHTML = "25 X 25";
 });
 
 slideValue.addEventListener("change", () => {
-    function removeAllChildNodes(parent) {
-        while (parent.firstChild) {
-            parent.removeChild(parent.firstChild);
-        }
-    }
     removeAllChildNodes(container);
     grids(slideValue.value);
 });
